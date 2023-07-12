@@ -25,8 +25,8 @@ import (
 	// Load sqlite storage driver
 	_ "go.temporal.io/server/common/persistence/sql/sqlplugin/sqlite"
 
-	"github.com/temporalio/temporalite"
-	"github.com/temporalio/temporalite/internal/liteconfig"
+	"github.com/hishamk/temporalite"
+	"github.com/hishamk/temporalite/internal/liteconfig"
 )
 
 // Name of the ui-server module, used in tests to verify that it is included/excluded
@@ -76,7 +76,7 @@ func buildCLI() *cli.App {
 	}
 	app := cli.NewApp()
 	app.Name = "temporalite"
-	app.Usage = "An experimental distribution of Temporal that runs as a single process\n\nFind more information at: https://github.com/temporalio/temporalite"
+	app.Usage = "An experimental distribution of Temporal that runs as a single process\n\nFind more information at: https://github.com/hishamk/temporalite"
 	app.Version = fmt.Sprintf("%s (server %s)", version, headers.ServerVersion)
 	app.Commands = []*cli.Command{
 		{

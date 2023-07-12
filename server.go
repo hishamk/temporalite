@@ -18,7 +18,7 @@ import (
 	"go.temporal.io/server/schema/sqlite"
 	"go.temporal.io/server/temporal"
 
-	"github.com/temporalio/temporalite/internal/liteconfig"
+	"github.com/hishamk/temporalite/internal/liteconfig"
 )
 
 // Server wraps temporal.Server.

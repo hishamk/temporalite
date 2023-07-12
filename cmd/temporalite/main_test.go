@@ -40,7 +40,7 @@ import (
 	"go.temporal.io/api/enums/v1"
 	"go.temporal.io/sdk/client"
 
-	"github.com/temporalio/temporalite/internal/liteconfig"
+	"github.com/hishamk/temporalite/internal/liteconfig"
 )
 
 func TestGetDynamicConfigValues(t *testing.T) {

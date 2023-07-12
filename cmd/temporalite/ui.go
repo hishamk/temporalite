@@ -16,7 +16,7 @@ import (
 	uiconfig "github.com/temporalio/ui-server/v2/server/config"
 	uiserveroptions "github.com/temporalio/ui-server/v2/server/server_options"
 
-	"github.com/temporalio/temporalite"
+	"github.com/hishamk/temporalite"
 )
 
 func newUIOption(c *uiConfig, configDir string) (temporalite.ServerOption, error) {
@@ -49,7 +49,7 @@ func newUIConfig(c *uiConfig, configDir string) (*uiconfig.Config, error) {
 		}
 	}
 
-	// See https://github.com/temporalio/temporalite/pull/174/files#r1035958308
+	// See https://github.com/hishamk/temporalite/pull/174/files#r1035958308
 	// for context about those overrides.
 	cfg.TemporalGRPCAddress = c.TemporalGRPCAddress
 	cfg.EnableUI = c.EnableUI

@@ -6,7 +6,7 @@
 
 package main
 
-import "github.com/temporalio/temporalite"
+import "github.com/hishamk/temporalite"
 
 func newUIOption(c *uiConfig, configDir string) (temporalite.ServerOption, error) {
 	return nil, nil
